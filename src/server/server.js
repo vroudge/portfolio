@@ -53,7 +53,7 @@ const renderFullPage = (html, initialState) => {
       </body>
     </html>
   `;
-}
+};
 
 app.use('/static', express.static(__dirname + '/../../dist'));
 
