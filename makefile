@@ -3,6 +3,5 @@ deploy:
 	eb deploy
 build:
 	npm run build
-	git commit -am "build"
 code:
 	npm start
