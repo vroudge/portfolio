@@ -1,104 +1,81 @@
 export function getPortfolio() {
   return [
     {
-    	link : 'http://www.goldmansachs.com',
-    	title : 'Goldman Sachs',
-    	classname : 'goldmans',
+    	link : 'http://www.kpsule.me/',
+    	title : 'Kpsule - Advertising',
+    	classname : 'kpsule',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'React, Backbone, D3'
+    			title : 'Fullstack Developer',
+    			skills : 'ES7, Postgre, React, Redux, Koa'
     		},
-    		{
-    			title : 'Back End Developer',
-    			skills : 'Node, MongoDB, Webpack'
-    		}
     	]
     },
     {
-    	link : 'http://www.libon.com/',
-    	title : 'Orange (Libon)',
-    	classname : 'orange',
+    	link : 'http://www.frichti.co/',
+    	title : 'Frichti - Food',
+    	classname : 'frichti',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'Backbone, WebRTC, FireFoxOS'
+    			title : 'Fullstack Developer',
+    			skills : 'ES7, Loopback, React, Postgre, Redis'
     		},
-    		{
-    			title : 'Back End Developer',
-    			skills : 'Node, MongoDB, Grunt'
-    		}
     	]
     },
     {
-    	link : 'http://www.pwul.net',
-    	title : 'Pay What You Like',
-    	classname : 'pwul',
+    	link : 'http://www.soundsgood.co/',
+    	title : 'Soundsgood - Music',
+    	classname : 'soundsgood',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'React, Backbone, D3'
+    			title : 'Fullstack Developer',
+    			skills : 'ES5, AngularJS, SailsJS, Postgres, Redis'
     		},
+    	]
+    },
+    {
+    	link : 'http://www.cubyn.com/',
+    	title : 'Cubyn - Logistics',
+    	classname : 'cubyn',
+    	roles : [
     		{
-    			title : 'Back End Developer',
-    			skills : 'Node, MongoDB, Gulp'
+    			title : 'Fullstack Developer',
+    			skills : 'ES7, AngularJS, Express, Postgres, Redis'
     		}
     	]
     },
     {
-    	link : 'http://www.timeout.com/london/card',
-    	title : 'Timeout',
-    	classname : 'timeout',
+    	link : 'http://www.beekast.com/',
+    	title : 'Beekast - Events',
+    	classname : 'beekast',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'Backbone, CSS3, HTML5'
+    			title : 'Lead Fullstack Developer (4 people)',
+    			skills : 'ES5, AngularJS, Express, Socket.IO'
     		}
     	]
     },
     {
-    	link : 'http://www.tesco.com/direct',
-    	title : 'Tesco Entertainment',
-    	classname : 'tesco',
+    	link : 'http://www.visibay.com/',
+    	title : 'Visibay / SIEN Solutions - Marketing',
+    	classname : 'visibay',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'Backbone, CSS3, HTML5'
+    			title : 'Fullstack C# Developer',
+    			skills : 'ES6, C#, .NET, SQL, Chrome-Ext'
     		}
     	]
     },
     {
-    	link : 'http://onlinelibrary.wiley.com',
-    	title : 'John Wiley and Sons',
-    	classname : 'wiley',
+    	link : 'http://www.sollyazar.com',
+    	title : 'Solly-Azar - Insurances',
+    	classname : 'sollyazar',
     	roles : [
     		{
-    			title : 'Front End Developer',
-    			skills : 'Backbone, CSS3, HTML5'
+    			title : 'Fullstack PHP Developer',
+    			skills : 'ES5, PHP5, jQuery'
     		}
     	]
     },
-    {
-    	link : 'http://www.covestor.com',
-    	title : 'Covestor',
-    	classname : 'covestor',
-    	roles : [
-    		{
-    			title : 'Front End Developer',
-    			skills : 'OO Javascript, CSS3, HTML5'
-    		}
-    	]
-    },
-    {
-    	link : 'http://www.shipserv.com',
-    	title : 'ShipServ',
-    	classname : 'shipserv',
-    	roles : [
-    		{
-    			title : 'Front End Developer',
-    			skills : 'OO Javascript, CSS3, HTML5'
-    		}
-    	]
-    }
   ]
 }

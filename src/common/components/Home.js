@@ -3,110 +3,99 @@ import Banner from './layout/Banner';
 
 class Home extends Component {
 
-  constructor(props){
-    super(props);
-    this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
-  }
+    constructor(props) {
+        super(props);
+        this.eventToggleSidebar = this.eventToggleSidebar.bind(this)
+    }
 
-  eventToggleSidebar(e) {
-    e.preventDefault();
-    this.props.toggleSidebar(!this.props.layout.sidebarOpen);
-  }
+    eventToggleSidebar(e) {
+        e.preventDefault();
+        this.props.toggleSidebar(!this.props.layout.sidebarOpen);
+    }
 
-  render() {
+    render() {
 
-    return (
+        return (
 
-      	<div className="posts">
-  
-  			<div className="post banner">
-			    <h1 className="post-title">I build <em>scalable</em>, <em>maintainable</em> and <em>secure</em> enterprise web applications.</h1>
-    			<p>for <em>agencies</em>, <em>bluechips</em>, <em>start-ups</em> and sometimes, <em>myself</em>. <a href="#" onClick={this.eventToggleSidebar}> Find out More</a></p>
+            <div className="posts">
 
-			</div>
-  
-		  	<div className="post clearfix">
+                <div className="post banner">
+                    <h1 className="post-title">I ship <em>quality-focused</em>, <em>maintainable</em> and <em>UX-oriented</em>
+                        web apps.</h1>
+                    <p>for <em>start-ups</em>, <em>big companies</em> and sometimes, <em>myself</em>. <a href="#"
+                                                                                                         onClick={this.eventToggleSidebar}>
+                        Discover more!</a></p>
 
-				<h2>Technologies I build with:</h2>
+                </div>
 
-				<div className="skill-item clearfix">
-					<h4>Client Side JS</h4>
-					<ul className="">
-						<li><em>Backbone</em></li>
-						<li><em><b>*</b><b>*</b>React</em>
-							<ul>
-								<li><em><b>*</b>Redux</em></li>
-								<li><em>Flux</em></li>
-							</ul>
-						</li>
-						<li><em>D3</em></li>
-					</ul>
-				</div>
+                <div className="post clearfix">
 
+                    <h2>I've done stuff with...</h2>
 
-				<div className="skill-item clearfix">
-					<h4>Server Side JS</h4>
-					<ul>
-						<li><em>MongoDB</em></li>
-						<li><em><b>*</b>Node</em>
-							<ul>
-								<li><em><b>*</b>Express</em></li>
-								<li><em>Hapi</em></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<div className="skill-item clearfix">
-					<h4>Testing</h4>
-					<ul>
-						<li><em>Jasmine</em></li>
-						<li><em>Karma</em></li>
-						<li><em>Protractor</em></li>
-						<li><em>Jest</em></li>
-					</ul>
-				</div>
-
-				<div className="skill-item clearfix">
-					<h4>Deployment</h4>
-					<ul className="clearfix">
-						<li><em><b>*</b>Nginx</em></li>
-						<li><em><b>*</b>Webpack</em></li>
-						<li><em>Gulp</em></li>
-						<li><em>Grunt</em></li>
-					</ul>
-				</div>
-
-				<div className="exclaimation">
-					<em><b>*</b> This site is built with these technologies. View the <a href="https://github.com/caljrimmer/portfolio-redux-app">github repo here</a>.</em><br/>
-					<em><b>**</b> Yep, I know React can be used on the server side too. This site is Isomorphical rendered.</em>
-				</div>
-
-  			</div>
+                    <div className="skill-item clearfix">
+                        <h4>Front End JS</h4>
+                        <ul className="">
+                            <li><em>ES6/7</em></li>
+                            <li><em>React</em>
+                                <ul>
+                                    <li><em>Redux</em></li>
+                                </ul>
+                            </li>
+                            <li><em>AngularJS</em></li>
+                            <li><em>WebGL</em></li>
+                        </ul>
+                    </div>
 
 
-  			<div className="post clearfix">
+                    <div className="skill-item clearfix">
+                        <h4>Back-End JS</h4>
+                        <ul>
+                            <li><em>Node.js</em>
+                                <ul>
+                                    <li><em>Express</em></li>
+                                    <li><em>Sails</em></li>
+                                </ul>
+                            </li>
+                            <li><em>PostgreSQL</em></li>
+                            <li><em>Redis</em></li>
+                        </ul>
+                    </div>
 
-				<h2>Companies I have worked with:</h2>
+                    <div className="skill-item clearfix">
+                        <h4>Testing</h4>
+                        <ul>
+                            <li><em>Moccha</em></li>
+                            <li><em>Chai</em></li>
+                            <li><em>Enzyme</em></li>
+                            <li><em>Sinon</em></li>
+                            <li><em>Jasmine</em></li>
+                        </ul>
+                    </div>
 
-				<ul className="clients">
-					<li className="goldmans-logo">Goldman Sachs</li>
-					<li className="orange-logo">Orange</li>
-					<li className="tesco-logo">Tesco</li>
-					<li className="timeout-logo">Timeout</li>
-					<li className="wiley-logo">John Wiley and Sons</li>
-					<li className="covestor-logo">Covestor</li>
-					<li className="shipserv-logo">Shipserv</li>
-				</ul>
+                    <div className="skill-item clearfix">
+                        <h4>Deployment</h4>
+                        <ul className="clearfix">
+                            <li><em>Nginx</em></li>
+                            <li><em>Webpack</em></li>
+                            <li><em>Gulp</em></li>
+                            <li><em>Grunt</em></li>
+                            <li><em>Jenkins</em></li>
+                        </ul>
+                    </div>
 
-			</div>
+                </div>
 
-			<Banner />
 
-  		</div>
-  
-    );
-  }
+                <div className="post clearfix">
+
+                </div>
+
+                <Banner />
+
+            </div>
+
+        );
+    }
 }
 
 export default Home;

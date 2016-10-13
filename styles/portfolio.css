@@ -60,38 +60,32 @@
 * Individual
 */
 
-.goldmans {
-	background:#fff url(assets/goldmans.jpg) top no-repeat;
+.beekast {
+	background:#fff url(assets/beekast.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
 
-.orange {
-	background:#fff url(assets/orange.jpg) top no-repeat;
+.sollyazar {
+	background:#fff url(assets/sollyazar.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
 
-.tesco {
-	background:#fff url(assets/tesco.png) top no-repeat;
+.cubyn {
+	background:#fff url(assets/cubyn.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
 
-.timeout {
-	background:#fff url(assets/timeout.png) top no-repeat;
+.frichti {
+	background:#fff url(assets/frichti.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
 
-.wiley {
-	background:#fff url(assets/wiley.png) top no-repeat;
+.soundsgood {
+	background:#fff url(assets/soundsgood.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
 
-.hellas {
-	background:#fff url(assets/hellas.png) top no-repeat;
-}
-
-.shipserv {
-	background:#fff url(assets/shipserv.png) top no-repeat;
-}
-
-.covestor {
-	background:#fff url(assets/covestor.png) top no-repeat;
-}
-
-.pwul {
-	background:#fff url(assets/pwul.jpg) top no-repeat;
+.visibay {
+	background:#fff url(assets/visibay.jpg) top no-repeat;
+    background-size: 731px 256px !important;
 }
