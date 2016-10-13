@@ -3,3 +3,9 @@ npm-debug.log
 lib
 .DS_Store
 dist
+deploy.zip
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.elasticbeanstalk/
