@@ -17,8 +17,7 @@ import packagejson from '../../package.json';
 
 const app = express();
 const renderFullPage = (html, initialState) => {
-  return `
-    <!doctype html>
+  return `<!doctype html>
     <html>
       <head>
         <meta charset="utf-8">
@@ -36,13 +35,7 @@ const renderFullPage = (html, initialState) => {
   `;
 }
 
-if(process.env.NODE_ENV !== 'production'){
-  const compiler = webpack(webpackConfig);
-  app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: webpackConfig.output.publicPath }));
-  app.use(webpackHotMiddleware(compiler));
-}else{
-  app.use('/static', express.static(__dirname + '/../../dist'));
-}
+app.use('/static', express.static(__dirname + '/../../dist'));
 
 app.get('/*', function (req, res) {
 
