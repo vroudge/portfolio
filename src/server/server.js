@@ -5,7 +5,6 @@ import webpackConfig from '../../webpack.config';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 
-import favicon from 'serve-favicon';
 
 import React from 'react';
 import { RoutingContext, match } from 'react-router';
@@ -18,14 +17,14 @@ import routes from '../common/routes';
 import packagejson from '../../package.json';
 
 const app = express();
-app.use(favicon(__dirname + '/../../dist/favicon.ico'));
 
 const renderFullPage = (html, initialState) => {
     return `<!doctype html>
     <html>
       <head>
         <meta charset="utf-8">
-        <title>Full Stack Web Developer based in London</title>
+        <title>Full Stack Web Developer based in Tel-Aviv</title>
+        <link rel="SHORTCUT ICON" href="/static/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="/static/app.css">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114x114.png" />
