@@ -12,8 +12,7 @@ install:
 	@echo ""
 	@make build
 build:
-	mkdir dist
-	NODE_ENV=production webpack -p --progress --colors --profile
+	mkdir dist || true
 	cp favicon.ico dist/favicon.ico || true
 	cp sitemap.xml dist/sitemap.xml || true
 	cp styles/assets/favicon-16x16.png dist/favicon-16x16.png || true
@@ -32,8 +31,9 @@ build:
 	cp styles/assets/mstile-150x150.png dist/mstile-150x150.png || true
 	cp styles/assets/mstile-310x150.png dist/mstile-310x150.png || true
 	cp styles/assets/mstile-310x310.png dist/mstile-310x310.png || true
-	rm dist/app.css.map
-	rm dist/bundle.js.map
+	rm dist/app.css.map || true
+	rm dist/bundle.js.map || true
+	NODE_ENV=production webpack -p --progress --colors --profile
 start-dev:
 	NODE_ENV=development node src/server/index.js --progress --colors --profile
 start:
