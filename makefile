@@ -1,6 +1,11 @@
 deploy:
 	make build
 	eb deploy
+install:
+	@echo "NPM Install"
+	npm install
+	@echo ""
+	@make build
 build:
 	NODE_ENV=production webpack -p --progress --colors --profile
 	cp favicon.ico dist/favicon.ico || true
