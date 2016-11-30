@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "A portfolio template built with Redux and React",
   "scripts": {
-    "slate": "rm -rf node_modules && npm install",
     "start": "NODE_ENV=production node src/server/index.js --progress --colors --profile"
   },
   "license": "MIT",

@@ -1,12 +1,18 @@
 deploy:
 	make build
 	eb deploy
+clean:
+	rm -rf node_modules
+	rm -rf dist
 install:
+	@echo "Cleaning up"
+	@make clean
 	@echo "NPM Install"
 	npm install
 	@echo ""
 	@make build
 build:
+	mkdir dist
 	NODE_ENV=production webpack -p --progress --colors --profile
 	cp favicon.ico dist/favicon.ico || true
 	cp sitemap.xml dist/sitemap.xml || true
