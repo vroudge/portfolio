@@ -28,7 +28,7 @@ build:
 	cp styles/assets/mstile-310x310.png dist/mstile-310x310.png || true
 	rm dist/app.css.map
 	rm dist/bundle.js.map
-code:
+start:
 	NODE_ENV=development node src/server/index.js --progress --colors --profile
-code-prod:
+start-prod:
 	NODE_ENV=production node src/server/index.js --progress --colors --profile
